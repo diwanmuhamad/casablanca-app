@@ -69,12 +69,21 @@ const MainChat = ({chatData, setChatData, setOpenSide, isLoading, setIsLoading})
                     {
                         chatData.length === 0 ?
                         <div className="w-full h-full p-4">
-                            <Link className='appearance-none cursor-pointer' to={{pathname:'/'}}><img src={cblogo} className="h-[30%] w-[30%] mx-auto"/></Link>
-                            <div className="w-full h-[40%] flex p-3 justify-between">
-                                <div className="w-[30%] h-[60%] rounded py-3 px-2 bg-neutral-600 shadow-xl text-center text-gray-400 text-[12px] sm:text-base">Find Your Best Buyers</div>
+                            <Link className='appearance-none cursor-pointer' to={{pathname:'/'}}><img src={cblogo} className="h-[20%] w-[20%] mx-auto"/></Link>
+                            <div className="w-full h-[50%] flex p-3 justify-between">
+                                <div className="w-[60%] h-[80%] rounded bg-neutral-600 shadow-xl m-auto p-5">
+                                    <div className="text-center text-gray-400">
+                                        <h3>Casablanca Chatbot</h3>
+                                        <ol className="text-left mt-4">
+                                            <li>1. Welcome! &#128075;</li>
+                                            <li>2. Start your conversation here</li>
+                                            <li>3. Let us assist you to find what you need</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                {/* <div className="w-[30%] h-[60%] rounded py-3 px-2 bg-neutral-600 shadow-xl text-center text-gray-400 text-[12px] sm:text-base">Find Your Best Buyers</div>
                                 <div className="w-[30%] h-[60%] rounded py-3 px-2 bg-neutral-600 shadow-xl text-center text-gray-400 text-[12px] sm:text-base">Start The Deal</div>
-                                <div className="w-[30%] h-[60%] rounded py-3 px-2 bg-neutral-600 shadow-xl text-center text-gray-400 text-[12px] sm:text-base">Match Your Needs</div>
-                                
+                                <div className="w-[30%] h-[60%] rounded py-3 px-2 bg-neutral-600 shadow-xl text-center text-gray-400 text-[12px] sm:text-base">Match Your Needs</div> */}
                             </div>
                         </div>
                         :
@@ -93,7 +102,7 @@ const MainChat = ({chatData, setChatData, setOpenSide, isLoading, setIsLoading})
                                         <div
                                         className="w-full flex mb-5 bg-zinc-700 p-5 rounded" 
                                         key={el.data}>
-                                        <p className="text-gradient">Heon:</p>
+                                        <p className="text-gradient">CB:</p>
                                         <p className="text-white ml-2">{el.data}</p></div>
                                     )
                                 })
