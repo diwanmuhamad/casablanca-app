@@ -88,14 +88,14 @@ const Login = () => {
 
                         <button
                             type="button"
-                            className="font-poppins w-full text-center py-3 rounded bg-blue-gradient text-black text-poppins hover:cursor-pointer focus:outline-none my-1"
+                            className="font-poppins w-full text-center py-3 rounded bg-red-gradient text-white text-poppins hover:cursor-pointer focus:outline-none my-1"
                             onClick={loginUser}
                         >Login</button>
 
                     </div>
 
                     <div className="text-black mt-6">
-                        Don't have an account? <Link to={{pathname:'/signup'}} className='text-blue-300 underline'>Sign Up</Link>
+                        Don't have an account? <Link to={{pathname:'/signup'}} className='text-red-300 underline'>Sign Up</Link>
                     </div>
                     <ToastContainer/>
                 </div>

@@ -111,19 +111,19 @@ const SignUp = () => {
 
                         <button
                             type="button"
-                            className="font-poppins w-full text-center py-3 rounded bg-blue-gradient text-black text-poppins hover:cursor-pointer focus:outline-none my-1"
+                            className="font-poppins w-full text-center py-3 rounded bg-red-gradient text-white text-poppins hover:cursor-pointer focus:outline-none my-1"
                             onClick={signUpUser}
                         >Create Account</button>
 
                         <div className="text-center text-sm text-grey-dark mt-4">
                             <p>
-                                By signing up, you agree to the <a href='#' className='text-blue-300 underline'>Term of Service</a> and <a href="#" className='text-blue-300 underline'>Privacy Policy</a>
+                                By signing up, you agree to the <a href='#' className='text-red-300 underline'>Term of Service</a> and <a href="#" className='text-red-300 underline'>Privacy Policy</a>
                             </p>
                         </div>
                     </div>
 
                     <div className="text-black mt-6">
-                        Already have an account? <Link to={{pathname:'/login'}} className='text-blue-300 underline'>Login</Link>
+                        Already have an account? <Link to={{pathname:'/login'}} className='text-red-300 underline'>Login</Link>
                     </div>
                     <ToastContainer/>
                 </div>

@@ -10,11 +10,11 @@ const Chat = () => {
     const [openSide, setOpenSide] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
 
-    // useEffect(()=> {
-    //     if (!localStorage.getItem('token')) {
-    //         navigate("/login")
-    //     }
-    // }, [])
+    useEffect(()=> {
+        if (!localStorage.getItem('token')) {
+            navigate("/login")
+        }
+    }, [])
     return (
         <div className="bg-primary w-full overflow-hidden flex">
             <SidebarChat openSide={openSide} setOpenSide={setOpenSide} setChatData={setChatData} isLoading={isLoading} setIsLoading={setIsLoading}/>

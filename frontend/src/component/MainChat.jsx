@@ -15,7 +15,7 @@ const MainChat = ({chatData, setChatData, setOpenSide, isLoading, setIsLoading})
         setChatData(temp)
         setQuestion("")
         setIsLoading(true)
-        Axios.post(`${import.meta.env.VITE_REACT_API_URL}/suggestions`, {
+        Axios.post(`${import.meta.env.VITE_REACT_API_URL}/ai/quest-ans`, {
             question: question
           }, {
             headers: {
@@ -103,7 +103,7 @@ const MainChat = ({chatData, setChatData, setOpenSide, isLoading, setIsLoading})
                                         <div
                                         className="w-full flex mb-5 bg-zinc-700 p-5 rounded" 
                                         key={el.data}>
-                                        <p className="text-gradient">CB:</p>
+                                        <p className="text-gradient">CB: </p>
                                         <p className="text-white ml-2">{el.data}</p></div>
                                     )
                                 })
