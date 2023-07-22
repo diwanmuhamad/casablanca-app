@@ -25,9 +25,8 @@ const FirstSection = () => {
         <h1 className="font-poppins font-semibold ss:text-[80px] text-[52px] text-black-gradient ss:leading-[100.8px] leading-[75px] w-full">
           Chatbot
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Welcome to our innovative matchmaking system, where we bring buyers and MSMEs together based on their unique needs and requirements.
-        Join us today and unlock the potential of seamless business partnerships.
+        <p className={`${styles.paragraph} max-w-[500px] mt-5`}>
+        Are you a small or medium enterprise seeking quick, accurate, and relevant information about the SME world? <br></br>Look no further! Introducing casablanca, your go-to chatbot designed to empower businesses like yours with a wealth of knowledge at your fingertips.
         </p>
         <Link to={{pathname: `/${localStorage.getItem('token')? "chat":"login"}`}} className="appearance-none"><Button styles="sm:mt-6 mt-6" /></Link>
       </motion.div>

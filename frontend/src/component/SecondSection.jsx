@@ -34,7 +34,7 @@ const SecondSection = () =>  (
         <span className="text-gradient">Grow</span> and <span className="text-gradient">Expand</span><br className="sm:block hidden" /> with Us
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Unlock the potential of our platform. Join a community who are leveraging our matchmaking expertise to find the perfect MSMEs partners that drive their businesses forward.
+        Empower your small or medium enterprise with the knowledge and information it deserves. Stay informed, make informed decisions, and watch your business thrive with casablanca by your side.
       </p>
 
       <Link to={{pathname: `/${localStorage.getItem('token')? "chat":"login"}`}} className="appearance-none"><Button styles={"mt-10"} /></Link>

@@ -56,23 +56,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Matchmaking",
+    title: "Comprehensive Data",
     content:
-      "Match buyers with MSMEs that meet their specific needs and interest",
+      "Casablanca provides comprehensive insights on a wide range of SME-related topics",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Speak with your native language",
     content:
-      "We ensure efficient, secure and accurate connections between peers.",
+      "You can now communicate with casablanca in your native language, making interactions more natural and comfortable",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Save Time",
+    title: "Quick and Effiecient",
     content:
-      "Saving time and effort for both parties to know each other",
+      "Say goodbye to time-consuming searches and endless browsing",
   },
 ];
 

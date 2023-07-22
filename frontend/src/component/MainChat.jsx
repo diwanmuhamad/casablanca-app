@@ -69,12 +69,13 @@ const MainChat = ({chatData, setChatData, setOpenSide, isLoading, setIsLoading})
                     {
                         chatData.length === 0 ?
                         <div className="w-full h-full p-4">
-                            <Link className='appearance-none cursor-pointer' to={{pathname:'/'}}><img src={cblogo} className="h-[20%] w-[20%] mx-auto"/></Link>
+                            {/* <Link className='appearance-none cursor-pointer' to={{pathname:'/'}}><img src={cblogo} className="h-[20%] w-[20%] mx-auto"/></Link> */}
+                            {/* <h3 className="text-gray-200 text-2xl mx-auto">Casablanca</h3> */}
                             <div className="w-full h-[50%] flex p-3 justify-between">
                                 <div className="w-[60%] h-[80%] rounded bg-neutral-600 shadow-xl m-auto p-5">
-                                    <div className="text-center text-gray-400">
-                                        <h3>Casablanca Chatbot</h3>
-                                        <ol className="text-left mt-4">
+                                    <div className="text-center">
+                                        <Link className="appearance-none cursor-pointer" to={{pathname:'/'}}><h3 className="text-gray-400 text-2xl hover:text-red-400">Casablanca Chatbot</h3></Link>
+                                        <ol className="text-left mt-4 text-gray-400">
                                             <li>1. Welcome! &#128075;</li>
                                             <li>2. Start your conversation here</li>
                                             <li>3. Let us assist you to find what you need</li>
