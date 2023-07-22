@@ -24,7 +24,7 @@
   display: block; /* For Firefox */
 }
 
-.text-gradient {
+.text-gradient-2 {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
     #def9fa 0.89%,
@@ -34,6 +34,25 @@
     #5ce1e6 71.54%,
     #33bbcf 100%
   );
+
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #eecac9 0.89%,
+    #eb8477 17.23%,
+    #f0542e 42.04%,
+    #af2918 55.12%,
+    #790a0a 71.54%,
+    #360202 100%
+  );
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -49,6 +68,18 @@
     #7de7eb 29.82%,
     #5ce1e6 51.94%,
     #33bbcf 90.29%
+  );
+}
+
+.bg-red-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #eecac9 0.89%,
+    #eb8477 17.23%,
+    #f0542e 42.04%,
+    #af2918 55.12%,
+    #790a0a 71.54%,
+    #360202 100%
   );
 }
 

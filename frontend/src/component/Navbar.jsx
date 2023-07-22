@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar">
     <div>
         <img src={cblogo} alt="heon" className="w-[150px] h-[80px]" />
-        <p className="tracking-[5px] ml-4">Casablanca</p>
+        <p className="tracking-[5px] ml-4 text-gradient">Casablanca</p>
     </div>
       
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">

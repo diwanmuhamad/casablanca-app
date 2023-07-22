@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style'
-import { Navbar} from '../component'
+import { Navbar, FirstSection, SecondSection, ThirdSection, FourthSection, Footer } from '../component'
 
 const Home = () => {
     return (
@@ -13,13 +13,14 @@ const Home = () => {
         
             <div className={`bg-primary flex justify-center items-start`}>
             <div className={`${styles.boxWidth}`}>
-
+                <FirstSection />
             </div>
             </div>
             
             <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-  
+                <SecondSection />
+                <Footer />
             </div>
             </div>
         </div>
