@@ -7,10 +7,13 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
+    "d3-dsv": "2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
+    "hnswlib-node": "^2.0.0",
     "jsonwebtoken": "^9.0.1",
+    "langchain": "^0.0.114",
     "pg": "^8.11.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.32.1"
