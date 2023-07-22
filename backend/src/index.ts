@@ -3,6 +3,9 @@ import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import cors from 'cors'
 import { sequelize } from './commons/db'
+import {
+  router
+} from './routes'
 
 dotenv.config();
 
@@ -13,6 +16,7 @@ app.use(cors());
 // body-parser
 app.use(bodyParser.json({ limit: '5mb', type: 'application/json' }));
 app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
+app.use('/', router);
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Welcome to Casablanca app!');
