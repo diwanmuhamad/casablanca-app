@@ -2,18 +2,22 @@ import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { CSVLoader } from "langchain/document_loaders/fs/csv";
 import { ChatOpenAI } from "langchain/chat_models/openai";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { ConversationalRetrievalQAChain } from "langchain/chains";
 import { sendSuccessMsg } from "../../commons/response";
 import { BufferMemory } from "langchain/memory";
-import * as fs from "fs";
+import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
 
 const questionAnswer = async (req: any, res: any) => {
   const reqBody = JSON.parse(JSON.stringify(req?.body));
   /* Initialize the LLM to use to answer the question */
   const model = new ChatOpenAI({});
   /* Load in the file we want to do question answering over */
-  const loader = new CSVLoader("src/files/umkm-list.csv");
+  const loader = new DirectoryLoader(
+    "src/files",
+    {
+      ".csv": (path) => new CSVLoader(path),
+    }
+  );
 
   const text: any = await loader.load();
   /* Create the vectorstore */
